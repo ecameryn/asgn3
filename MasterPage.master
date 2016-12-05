@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Styles/Styles.css" rel="stylesheet" /> 
+</head>
+<body>
+    <img src="Images/bannerImage.jpg" id="bannerimg"/>
+    <h1>All Wares Available While Supply Lasts</h1>
+
+    <form id="form1" runat="server">
+
+    <div id="Wrapper">
+
+        <br /><br /><br />
+        <nav id="sidenav">
+            Check Prices On:
+            <ul>
+                <li><a href="http://www.ebay.com"> Ebay</a></li>
+                <li> <a href="http://www.amazon.com">Amazon</a></li>
+                <li> <a href="http://www.walmart.com">  Walmart</a></li>
+                <li><a href="http://www.target.com"> Target</a></li>
+                 <li><a href="http://www.google.com/shopping"> Google</a></li>
+                <li><a href="/"> <s>Check Local Prices</s></a></li>
+            </ul>
+        </nav>
+
+        <section id="MainContent">
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </section>
+
+        <br /><br /><br />
+        <aside id="sidebar">
+            <h3>Pop Up Shop Info</h3>
+            <p>This Pop Up Shop Sales Items That Are Impossible To Find At Fair Prices 
+                Due To Popular Demand. STOCK WILL NOT BE REPLINISHED!!!
+            </p>
+        </aside>
+
+
+        <!--<div id="footer">Asgn3 &#8482 </div>-->
+    </div>
+    </form>
+</body>
+</html>
