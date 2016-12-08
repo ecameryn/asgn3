@@ -29,7 +29,7 @@
             <PagerStyle HorizontalAlign="Center" BackColor="#FFCC66" ForeColor="#333333"></PagerStyle>
 
             <RowStyle BackColor="#FFFBD6" ForeColor="#333333"></RowStyle>
-        </asp:detailsview>
+        </asp:DetailsView>
 
         <asp:SqlDataSource runat="server" ID="SqlDataSourceElectronicsViewChosen" ConnectionString='<%$ ConnectionStrings:dbHolstickAsgn3ConnectionString %>' SelectCommand="SELECT [Name], [Price], [Description] FROM [Electronics] WHERE ([ID] = @ID)">
             <SelectParameters>
