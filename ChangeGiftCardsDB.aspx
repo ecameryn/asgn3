@@ -31,7 +31,7 @@
         <SortedDescendingHeaderStyle BackColor="#820000"></SortedDescendingHeaderStyle>
     </asp:GridView>
 
-    <asp:SqlDataSource runat="server" ID="SqlDataSourceGiftCardsChangeDB" ConnectionString='<%$ ConnectionStrings:dbHolstickAsgn3ConnectionString %>' 
+    <asp:SqlDataSource runat="server" ID="SqlDataSourceGiftCardsChangeDB" ConnectionString="<%$ ConnectionStrings:dbHolstickAsgn3ConnectionString %>"
         DeleteCommand="DELETE FROM [GiftCards] WHERE [ID] = @ID" InsertCommand="INSERT INTO [GiftCards] ([ID], [Name], [Price], [Description]) VALUES (@ID, @Name, @Price, @Description)" 
         ProviderName="<%$ ConnectionStrings:dbHolstickAsgn3ConnectionString.ProviderName %>" SelectCommand="SELECT [ID], [Name], [Price], [Description] FROM [GiftCards]" 
         UpdateCommand="UPDATE [GiftCards] SET [Name] = @Name, [Price] = @Price, [Description] = @Description WHERE [ID] = @ID">

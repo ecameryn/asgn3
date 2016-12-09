@@ -22,6 +22,7 @@
             <a href="GiftCards.aspx">
                 GIFT CARDS<br /><img src="Images/giftcards.jpg" class="mainpgImage" />
             </a>
+        <</p>
 
         <p> <!--Almost Gone!<br />-->
             <a href="LastChance.aspx">
